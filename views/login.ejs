@@ -17,7 +17,7 @@
 	<div class="w3_login_module">
 		<div class="module form-module">
 		  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
-			<div class="tooltip">Click Me</div>
+			<div class="tooltip" id = 'regist-login'>Regist</div>
 		  </div>
 		  <div class="form">
 			<h2>Login to your account</h2>
@@ -51,6 +51,9 @@
 			'padding-bottom': 'toggle',
 			opacity: "toggle"
 		  }, "slow");
+		  let _switch = $('#regist-login').text()
+		  $('#regist-login').text(_switch.localeCompare('Regist')!=-1?'Login':'Regist')
+		  console.log('_switch: ', _switch.localeCompare('Regist'))
 		});
 	</script>
 </div>
