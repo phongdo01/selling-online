@@ -16,8 +16,13 @@
 	<h3>Sign In & Sign Up</h3>
 	<div class="w3_login_module">
 		<div class="module form-module">
+<<<<<<< HEAD
 		  <div class="toggle">
 			<div class="tooltip nut">Đăng nhập</div>
+=======
+		  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
+			<div class="tooltip" id = 'regist-login'>Regist</div>
+>>>>>>> 1787eeda039a4f4799d14bd235ae98806ed8f93a
 		  </div>
 		  <div class="form">
 			<h2>Login to your account</h2>
@@ -52,6 +57,7 @@
 			'padding-bottom': 'toggle',
 			opacity: "toggle"
 		  }, "slow");
+<<<<<<< HEAD
 		
 		console.log(trangThai)
 		var textNut = document.querySelector('.nut')
@@ -63,6 +69,11 @@
 			textNut.textContent = "Đăng nhập"
 			trangThai = !trangThai
 		}
+=======
+		  let _switch = $('#regist-login').text()
+		  $('#regist-login').text(_switch.localeCompare('Regist')!=-1?'Login':'Regist')
+		  console.log('_switch: ', _switch.localeCompare('Regist'))
+>>>>>>> 1787eeda039a4f4799d14bd235ae98806ed8f93a
 		});
 	</script>
 </div>
