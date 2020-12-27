@@ -16,8 +16,8 @@
 	<h3>Sign In & Sign Up</h3>
 	<div class="w3_login_module">
 		<div class="module form-module">
-		  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
-			<div class="tooltip">Click Me</div>
+		  <div class="toggle">
+			<div class="tooltip nut">Đăng nhập</div>
 		  </div>
 		  <div class="form">
 			<h2>Login to your account</h2>
@@ -41,6 +41,7 @@
 		</div>
 	</div>
 	<script>
+		var trangThai = true
 		$('.toggle').click(function(){
 		  // Switches the Icon
 		  $(this).children('i').toggleClass('fa-pencil');
@@ -51,6 +52,17 @@
 			'padding-bottom': 'toggle',
 			opacity: "toggle"
 		  }, "slow");
+		
+		console.log(trangThai)
+		var textNut = document.querySelector('.nut')
+		if (trangThai == true) {			
+			textNut.textContent = "Đăng kí"
+			trangThai = !trangThai
+		}
+		else {
+			textNut.textContent = "Đăng nhập"
+			trangThai = !trangThai
+		}
 		});
 	</script>
 </div>
