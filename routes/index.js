@@ -3,7 +3,7 @@ var router = express.Router();
 const { MongoClient } = require("mongodb");
 // Replace the uri string with your MongoDB deployment's connection string.
 const uri =
-  "mongodb+srv://phongadm:<password>@cluster0.yywoj.mongodb.net/<dbname>?retryWrites=true&w=majority";
+  "mongodb+srv://hungtrn:hungtrn123@cluster0.yywoj.mongodb.net/<dbname>?retryWrites=true&w=majority";
 const client = new MongoClient(uri);
 
 
@@ -21,6 +21,11 @@ router.get('/', async function(req, res, next) {
     // Ensures that the client will close when you finish/error
     await client.close();
   }
+});
+
+
+router.get('/login/login', async function(req, res, next) {
+  res.render('login');
 });
 
 module.exports = router;
