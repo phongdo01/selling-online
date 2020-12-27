@@ -3,7 +3,7 @@ var router = express.Router();
 const { MongoClient } = require("mongodb");
 // Replace the uri string with your MongoDB deployment's connection string.
 const uri =
-  "mongodb+srv://hungtrn:hungtrn123@cluster0.yywoj.mongodb.net/<dbname>?retryWrites=true&w=majority";
+  "mongodb+srv://hungtrn:hungtrn123@cluster0.yywoj.mongodb.net/selling-online?retryWrites=true&w=majority";
 const client = new MongoClient(uri);
 
 
